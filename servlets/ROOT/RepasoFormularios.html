@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<META CHARSET="UTF-8">
+<script>
+function enviar(){
+alert("vas a enviar los datos")
+document.miFormulario.submit()
+}
+</script>
+</head>
+<body bgcolor="steelblue" text="white">
+<h1 style="color:orange;background:white;border-style:dotted"> Formulario de datos </h1>
+<hr>
+<form name="miFormulario" method="get" action="#">
+<table border="1">
+<tr>
+<td>Nombre:</td><td><input type="text" size="15"></td>
+</tr>
+<tr>
+<td>Ciudad:</td><td><input type="text" size="15"></td>
+</tr>
+<tr>
+<td>País:</td><td><input type="text" size="15"></td>
+</tr>
+
+</table>
+<hr>
+Clave:<input type="password" name="clave" size="5" maxlength="3">
+<br>
+<br>
+<br>
+Forma de pago:<br>
+visa<input type="radio" name="fpago" value="visa" checked><br>
+Master Card<input type="radio" name="fpago" value="master"><br>
+Metálico<input type="radio" name="fpago" value="metal"><br>
+<hr>
+Horario de Reparto:<br>
+Mañana<input type="checkbox" name="chk1" value="man" checked><br>
+Tardes<input type="checkbox" name="chk2" value="tar"><br>
+Noches<input type="checkbox" name="chk3" value="noch"><br>
+<br>
+Fast food:
+<select name="comida">
+<option value="1"> Sandwich de jamón y queso</option>
+<option value="2"> Pizza 4 estaciones</option>
+<option value="3" selected> Hamburguesa fusión</option>
+<option value="4"> Peritos caliente mixtos</option>
+</select>
+<br><br><br>
+Fast food:
+<select name="comida" multiple>
+<option value="1"> Sandwich de jamón y queso</option>
+<option value="2"> Pizza 4 estaciones</option>
+<option value="3" selected> Hamburguesa fusión</option>
+<option value="4"> Peritos caliente mixtos</option>
+</select>
+<br>
+Observaciones: <br>
+<textarea name="obs">Escribe aqui tus comentarios
+</textarea>
+<br><br>
+<br>
+<input type="reset" value="Borrar Datos">
+<!--<input type="submit" value="Enviar Datos">-->
+<img src="boton.png"width="100" height="100" onclick="enviar()">
+
+
+
+</form>
+
+</body>
+<html>
